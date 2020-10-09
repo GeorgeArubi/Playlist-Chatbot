@@ -14,9 +14,21 @@ const LearningOptions = (props) => {
             handler: props.actionProvider.handleLove, 
             id: 2,
         },
-        {text: "Driving Music", handler: () => {}, id: 3},
-        {text: "Upbeat", handler: () => {}, id: 4},
-        {text: "Surprise Me", handler: () => {}, id: 5},
+        {
+            text: "Driving Music", 
+            handler: props.actionProvider.handleDriving, 
+            id: 3,
+        },
+        {
+            text: "Upbeat", 
+            handler: props.actionProvider.handleBeats, 
+            id: 4,
+        },
+        {
+            text: "Surprise Me", 
+            handler: props.actionProvider.handleSurprises, 
+            id: 5,
+        },
     ];
 
     const optionsMarkup = options.map((option) => (
