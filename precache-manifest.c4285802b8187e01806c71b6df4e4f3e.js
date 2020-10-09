@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de6c20e4dd874e72c4a0704e4264213f",
+    "revision": "1987869107207795dc97a2cdae32ec1f",
     "url": "/Playlist-Chatbot/index.html"
   },
   {
-    "revision": "a69d1d82a7c4082fe1b2",
-    "url": "/Playlist-Chatbot/static/css/main.511227dc.chunk.css"
+    "revision": "f87c840b5a10c5a73b0e",
+    "url": "/Playlist-Chatbot/static/css/main.6cd0e3f5.chunk.css"
   },
   {
     "revision": "45aeb9c48ead89eeed88",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Playlist-Chatbot/static/js/2.a108dd58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a69d1d82a7c4082fe1b2",
-    "url": "/Playlist-Chatbot/static/js/main.811ddf94.chunk.js"
+    "revision": "f87c840b5a10c5a73b0e",
+    "url": "/Playlist-Chatbot/static/js/main.b66846e7.chunk.js"
   },
   {
     "revision": "a1c905c24ffad63472a0",
