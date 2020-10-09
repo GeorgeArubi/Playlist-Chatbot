@@ -9,7 +9,11 @@ const LearningOptions = (props) => {
             handler: props.actionProvider.handleRecents,
             id: 1,
         },
-        {text: "In/Out of Love", handler: () => {}, id: 2},
+        {
+            text: "In/Out of Love",
+            handler: props.actionProvider.handleLove, 
+            id: 2,
+        },
         {text: "Driving Music", handler: () => {}, id: 3},
         {text: "Upbeat", handler: () => {}, id: 4},
         {text: "Surprise Me", handler: () => {}, id: 5},
