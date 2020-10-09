@@ -6,7 +6,7 @@ const LearningOptions = (props) => {
     const options = [
         {
             text: "Recents",
-            handler: props.actionProvider.handleJavascriptList,
+            handler: props.actionProvider.handleRecents,
             id: 1,
         },
         {text: "In/Out of Love", handler: () => {}, id: 2},
