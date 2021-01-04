@@ -76,13 +76,6 @@ class ActionProvider {
       this.updateChatbotState(message)
     }
 
-    makeupyourmind(){
-      const message = this.createChatBotMessage(
-        "Shouldn't you be busy solving world hunger or racism???",
-      )
-
-      this.updateChatbotState(message)
-    }
 /*This function below is set in the constructor, and is passed in from the top
   level Chatbot component. The setState function here actually manipulates
   the top level state of the Chatbot, so it's important that we make sure 
