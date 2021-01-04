@@ -13,14 +13,10 @@ class MessageParser {
                     this.actionProvider.greet();
     
 //------------------------------------------------------------------------
-    if (lowerCaseMessage.includes("music")){
-      this.actionProvider.suggestions()
-    }
-
-    if (lowerCaseMessage.includes("playlist")){
-      this.actionProvider.suggestions()
-    }
-
+          var music__substrings = ["music", "playlist", "yes"];
+          for (var i = 0 ; i < music__substrings.length ; i++) 
+              if (lowerCaseMessage.includes(substrings[i]))
+                    this.actionProvider.greet();
     if (lowerCaseMessage.includes("yes")){
       this.actionProvider.suggestions()
     }
