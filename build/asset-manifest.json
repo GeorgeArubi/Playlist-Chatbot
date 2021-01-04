@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Playlist-Chatbot/static/css/main.3c35b1f6.chunk.css",
+    "main.js": "/Playlist-Chatbot/static/js/main.47e23f08.chunk.js",
+    "main.js.map": "/Playlist-Chatbot/static/js/main.47e23f08.chunk.js.map",
+    "runtime-main.js": "/Playlist-Chatbot/static/js/runtime-main.df79a662.js",
+    "runtime-main.js.map": "/Playlist-Chatbot/static/js/runtime-main.df79a662.js.map",
+    "static/js/2.933822e7.chunk.js": "/Playlist-Chatbot/static/js/2.933822e7.chunk.js",
+    "static/js/2.933822e7.chunk.js.map": "/Playlist-Chatbot/static/js/2.933822e7.chunk.js.map",
+    "index.html": "/Playlist-Chatbot/index.html",
+    "static/css/main.3c35b1f6.chunk.css.map": "/Playlist-Chatbot/static/css/main.3c35b1f6.chunk.css.map",
+    "static/js/2.933822e7.chunk.js.LICENSE.txt": "/Playlist-Chatbot/static/js/2.933822e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df79a662.js",
+    "static/js/2.933822e7.chunk.js",
+    "static/css/main.3c35b1f6.chunk.css",
+    "static/js/main.47e23f08.chunk.js"
+  ]
+}
