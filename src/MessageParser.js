@@ -15,7 +15,7 @@ class MessageParser {
 //------------------------------------------------------------------------
           var music__substrings = ["music", "playlist"];
           for (var j = 0 ; j < music__substrings.length ; j++) 
-              if (lowerCaseMessage.includes(substrings[j]))
+              if (lowerCaseMessage.includes(music__substrings[j]))
                     this.actionProvider.greet();
 
     if (lowerCaseMessage.includes("yes")){
