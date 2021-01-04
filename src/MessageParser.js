@@ -6,24 +6,12 @@ class MessageParser {
 
     parse(message) {
       const lowerCaseMessage = message.toLowerCase()
-      /*let toCheck = ['hello', 'hi']
-      var myStringArray = ["hello","hi"];
-      var arrayLength = myStringArray.length;
-      for (var i = 0; i < arrayLength; i++) {
-      console.log(myStringArray[i]);
-      }
-      */
-      if (lowerCaseMessage.includes("hello")){
-          this.actionProvider.greet()
-      }
-
-      if (lowerCaseMessage.includes("hey")){
-        this.actionProvider.greet()
-      }
-
-     if (lowerCaseMessage.includes("hi")){
-        this.actionProvider.greet()
-      }
+      
+          var substrings = ["hello", "hey", "hi"];
+          for (var i = 0 ; i < substrings.length ; i++) 
+               if (lowerCaseMessage.includes(substrings[i]))
+                    this.actionProvider.greet();
+    
 //------------------------------------------------------------------------
     if (lowerCaseMessage.includes("music")){
       this.actionProvider.suggestions()
