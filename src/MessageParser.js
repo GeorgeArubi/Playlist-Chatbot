@@ -1,93 +1,54 @@
-//MessageParser class implements a parse method.
+// MessageParser class implements a parse method.
 class MessageParser {
     constructor(actionProvider) {
       this.actionProvider = actionProvider;
     }
 
-    parse(message) {
-      const lowerCaseMessage = message.toLowerCase()
+  parse(message) {
+    const lowerCaseMessage = message.toLowerCase()
       
-          var substrings = ["hello", "hey", "hi"];
-          for (var i = 0 ; i < substrings.length ; i++) 
-               if (lowerCaseMessage.includes(substrings[i]))
-                    this.actionProvider.greet();
-    
+    let substrings = ["hello", "hey", "hi"];
+      for (let i = 0 ; i < substrings.length ; i++) 
+        if (lowerCaseMessage.includes(substrings[i]))
+            this.actionProvider.greet();
 //------------------------------------------------------------------------
-          var music__substrings = ["music", "playlist"];
-          for (var j = 0 ; j < music__substrings.length ; j++) 
-              if (lowerCaseMessage.includes(music__substrings[j]))
-                    this.actionProvider.greet();
-
-    if (lowerCaseMessage.includes("yes")){
-      this.actionProvider.suggestions()
-    }
+    let music__substrings = ["music", "playlist", "yes"];
+      for (let j = 0 ; j < music__substrings.length ; j++) 
+        if (lowerCaseMessage.includes(music__substrings[j]))
+            this.actionProvider.suggestions();
 //------------------------------------------------------------------------
-      if (lowerCaseMessage.includes("recent")){
-        this.actionProvider.handleRecents()
-      }
+    let recent__substrings = ["recent", "new"];
+      for (let k = 0 ; k < recent__substrings.length ; k++) 
+        if (lowerCaseMessage.includes(recent__substrings[k]))
+            this.actionProvider.handleRecents();
 //------------------------------------------------------------------------
-      if (lowerCaseMessage.includes("feel")){
-        this.actionProvider.handleLove()
-      }
-
-      if (lowerCaseMessage.includes("love")){
-        this.actionProvider.handleLove()
-      }
-
-      if (lowerCaseMessage.includes("broke")){
-        this.actionProvider.handleLove()
-      }
-
-      if (lowerCaseMessage.includes("sad")){
-        this.actionProvider.handleLove()
-      }
+    let love__substrings = ["feel", "love", "broke", "sad"];
+      for (var l = 0 ; l < love__substrings.length ; l++) 
+        if (lowerCaseMessage.includes(love__substrings[l]))
+            this.actionProvider.handleLove();      
 //------------------------------------------------------------------------
-      if (lowerCaseMessage.includes("where")){
-        this.actionProvider.handleDriving()
-      }
-
-      if (lowerCaseMessage.includes("trip")){
-        this.actionProvider.handleDriving()
-      }
-
-      if (lowerCaseMessage.includes("car")){
-        this.actionProvider.handleDriving()
-      }
+    let trip__substrings = ["travel", "trip", "car", "vacation"];
+      for (var m = 0 ; m < trip__substrings.length ; m++) 
+        if (lowerCaseMessage.includes(trip__substrings[m]))
+            this.actionProvider.handleDriving();   
 //------------------------------------------------------------------------
-      if (lowerCaseMessage.includes("dance")){
-        this.actionProvider.handleBeats()
-      }
-
-      if (lowerCaseMessage.includes("upbeat")){
-        this.actionProvider.handleBeats()
-      }
-
-      if (lowerCaseMessage.includes("fast")){
-        this.actionProvider.handleBeats()
-      }
-      if (lowerCaseMessage.includes("shake")){
-        this.actionProvider.handleBeats()
-      }
+    let beat__substrings = ["dance", "upbeat", "fast", "shake", "beat"];
+      for (var n = 0 ; n < beat__substrings.length ; n++) 
+        if (lowerCaseMessage.includes(beat__substrings[n]))
+            this.actionProvider.handleBeats();
 //------------------------------------------------------------------------
-      if (lowerCaseMessage.includes("not sure")){
-        this.actionProvider.handleSurprises()
-      }
+    let surprise__substrings = ["not sure", "don't know", "surprise", "idk"];
+      for (var o = 0 ; o < surprise__substrings.length ; o++) 
+        if (lowerCaseMessage.includes(surprise__substrings[o]))
+            this.actionProvider.handleSurprises();
 
-      if (lowerCaseMessage.includes("don't know")){
-        this.actionProvider.handleSurprises()
-      }
-
-      if (lowerCaseMessage.includes("surprise")){
-        this.actionProvider.handleSurprises()
-      }
-      if (lowerCaseMessage.includes("idk")){
-        this.actionProvider.handleSurprises()
-      }
-/*      else{
-        this.actionProvider.makeupyourmind()
-      }
+/* 
+    Write a function that sends only one reply from the bot,
+    i.e., if the user enters a sentence that includes keywords from two substring arrays,
+    the bot should give a reply that best fits the user's input 
 */
-    }
+
   }
+}
   
 export default MessageParser;
